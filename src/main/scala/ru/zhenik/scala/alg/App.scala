@@ -12,4 +12,7 @@ object App extends App {
 
   println("\n\nFIBONACCI")
   Algorithms.fibFrom(1,2).takeWhile(_<10).foreach(println(_))
+
+  println("\n\nGCD")
+  println(Algorithms.gcd(8, 12))
 }

@@ -24,4 +24,11 @@ object Algorithms {
   // NB! next element in stream is lazy evaluated
   def fibFrom(a: Int, b: Int): Stream[Int] = a #:: fibFrom(b, a+b)
 
+  // greatest common divisor (gcd)
+  @tailrec
+  def gcd(a: Int, b: Int): Int = {
+    if (a == b) a
+    else if (a > b) gcd(a-b,b)
+    else gcd(a, b-a)
+  }
 }
