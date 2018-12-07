@@ -1,5 +1,4 @@
-package ru.zhenik.scala.alg
-
+package ru.zhenik.scala.learn
 
 /**
   *
